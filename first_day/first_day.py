@@ -6,6 +6,7 @@ f = open("input.txt", "r")
 for i in f:
     initial_measurement_array.append(int(i))
 # print((initial_measurement_array))
+f.close()
 
 for i in (range(2,len(initial_measurement_array)-1)):
     a = initial_measurement_array[i-2] + initial_measurement_array[i-1] + initial_measurement_array[i]
